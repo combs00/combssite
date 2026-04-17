@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
     rel="stylesheet"
   />
   <style>
@@ -54,12 +54,85 @@
       text-transform: uppercase;
       color: rgba(245, 245, 248, 0.55);
     }
+
+    .splash-social {
+      margin-top: 2.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .splash-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.1rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: none;
+      color: rgba(245, 245, 248, 0.88);
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .splash-social a:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    .splash-social a:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.5);
+      outline-offset: 3px;
+    }
+
+    .splash-social svg {
+      width: 1.125rem;
+      height: 1.125rem;
+      flex-shrink: 0;
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
   <div class="splash">
     <h1>COMBS</h1>
     <p>Coming soon</p>
+    <nav class="splash-social" aria-label="Social links">
+      <a
+        href="https://www.instagram.com/combs_vj/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="@combs_vj on Instagram"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M12 7.2A4.8 4.8 0 1 0 16.8 12 4.805 4.805 0 0 0 12 7.2Zm0 7.95A3.15 3.15 0 1 1 15.15 12 3.155 3.155 0 0 1 12 15.15Zm6.345-8.22a1.125 1.125 0 1 1-1.125-1.12 1.12 1.12 0 0 1 1.125 1.12ZM20.4 12c0-1.665.015-3.3-.075-4.95a4.95 4.95 0 0 0-1.38-3.405A4.814 4.814 0 0 0 15.6 2.265C14.1 2.175 12.45 2.19 10.8 2.19S7.5 2.175 6 2.265a4.814 4.814 0 0 0-3.345 1.38A4.814 4.814 0 0 0 1.275 6.9C1.185 8.4 1.2 10.035 1.2 11.685s-.015 3.3.075 4.95a4.95 4.95 0 0 0 1.38 3.405A4.814 4.814 0 0 0 6 21.135c1.5.09 3.15.075 4.8.075s3.3.015 4.95-.075a4.814 4.814 0 0 0 3.345-1.38 4.95 4.95 0 0 0 1.38-3.405c.09-1.5.075-3.135.075-4.785Zm-1.2 9.63c-.135.945-.465 1.815-1.065 2.415s-1.47.93-2.415 1.065c-1.455.105-3.045.12-4.725.12s-3.27-.015-4.725-.12a4.35 4.35 0 0 1-2.415-1.065 3.555 3.555 0 0 1-1.065-2.415c-.105-1.455-.12-3.045-.12-4.725s.015-3.27.12-4.725a4.35 4.35 0 0 1 1.065-2.415A3.555 3.555 0 0 1 5.895 4.65c1.455-.105 3.045-.12 4.725-.12s3.27.015 4.725.12a4.35 4.35 0 0 1 2.415 1.065 3.555 3.555 0 0 1 1.065 2.415c.105 1.455.12 3.045.12 4.725s-.015 3.27-.12 4.725Z"
+          />
+        </svg>
+        Instagram
+      </a>
+      <a
+        href="https://raveloops.club/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="RaveLoops at raveloops.club"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          <polyline points="15 3 21 3 21 9" />
+          <line x1="10" y1="14" x2="21" y2="3" />
+        </svg>
+        RaveLoops
+      </a>
+    </nav>
   </div>
 </body>
 </html>
